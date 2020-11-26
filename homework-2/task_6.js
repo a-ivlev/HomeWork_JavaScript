@@ -12,10 +12,10 @@
 числа.
 */
 
-let manny = parseInt(prompt("Введите какую сумму денег вы хотите положить на счёт в банке?"));
+let money = parseInt(prompt("Введите какую сумму в рублях вы хотите положить на счёт в банке?"));
 
 
-alert(`Ваша сумма в ${manny} ${rub(manny)} успешно зачислена.`)
+alert(`Ваша сумма в ${money} ${rub(money)} успешно зачислена.`)
 
 
 /**
@@ -25,6 +25,8 @@ alert(`Ваша сумма в ${manny} ${rub(manny)} успешно зачисл
  */
 function rub(summa) {
     switch (true) {
+        case summa > 10 && summa < 20:
+            return "рублей";
         case summa % 10 == 1:
             return "рубль";
         case summa % 10 >= 2 && summa % 10 <= 4:
