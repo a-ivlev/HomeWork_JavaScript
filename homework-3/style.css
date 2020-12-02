@@ -1,0 +1,42 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px 50px;
+  font-family: 'Montserrat', sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #212121;
+}
+a:hover {
+  text-decoration: none;
+  color: #6c6c6c;
+}
+
+.menu {
+  padding-top: 50px;
+  float: left;
+  list-style-type: none;
+}
+.menu_list {
+  float: left;
+}
+.menu_link {
+  font-size: 14px;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  padding: 10px 13px;
+}
+.menu_link:hover {
+  color: #212121;
+}
+.menu_link-aktive {
+  font-weight: bold;
+  color: #212121;
+  border-bottom: 3px solid #212121;
+}
+
