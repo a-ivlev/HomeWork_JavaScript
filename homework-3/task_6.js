@@ -10,8 +10,6 @@ xxxx
 xxxxx
 */
 
-let x = "";
-for (let i = 0; i < 20; i++) {
-    x += "x";
-    console.log(`${x}`);
+for (let x = "x"; x.length <= 20; x += "x") {
+    console.log(x);
 }

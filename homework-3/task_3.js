@@ -26,9 +26,9 @@ products.forEach(function (products) {
 });
 
 // Первый способ решения
-console.log("Первый способ решения задачи"
+console.log("Первый способ решения задачи");
         const priceSale15 = products.map(function (sale) {
-            let sale15 = sale.price - sale.price / 100 * 15
+            let sale15 = sale.price - sale.price / 100 * 15;
             return Object.assign({}, sale, {
                 priceSale15: sale15
             });
@@ -40,7 +40,7 @@ console.log("Первый способ решения задачи"
         }
 
         // Второй спобоб решения
-        console.log("Второй способ решения задачи"
+        console.log("Второй способ решения задачи");
             // Ввыведем исходные данные в консоль
             // Выведем тоже самое только другим способом.
             for (let property in products) {

@@ -42,7 +42,7 @@ const products = [
    массива у которых есть фотография.
 */
 const prodImage = products.filter(function (img) {
-    return ("photos" in img) && (img.photos.length > 0);
+    return "photos" in img && img.photos.length > 0;
 });
 
 // Выведем полученные массив в консоль.
