@@ -16,6 +16,8 @@
     2. Проверьте, есть ли в ссылке текст "ссылка", и если нет, то добавьте. -->
 
     <script>
+        "use strict";
+
         let linkCollections = document.links;
         for (let i = 0; i < linkCollections.length; i++){
             if(linkCollections[i].innerText == 'ссылка'){
