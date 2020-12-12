@@ -35,8 +35,17 @@
         можете также добавить какой-нибудь коэффициент, чтобы подобрать желаемую скорость
         заполнения прогресс-бара.
         */
-        
 
+        // Сделать с помощью setTimeout в цикле у меня не получилось. Так как цикл не реагировал на setTimeout.
+
+        let i = 0;
+        let intervalId = setInterval(function (){
+            if (i > 100){
+                clearInterval(intervalId)
+            } else {
+                changeProgress(i++);
+            }
+        }, 100);
     </script>
 </body>
 

@@ -7,6 +7,8 @@
 </head>
 <body>
     <script>
+        "use strict";
+
         const products = {
             one: "один",
             two: "два",
@@ -15,9 +17,13 @@
 
         /* 
         Задание.
-        Используя цикл for in переберите объект products, ведите в консоль
+        Используя цикл for in переберите объект products, выведите в консоль
         имя свойства, значение свойства.
         */
+
+        for (let product in products) {
+            console.log(`${product}: ${products[product]}`)
+        }
 
     </script>
 </body>
