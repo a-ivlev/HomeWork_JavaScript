@@ -33,7 +33,7 @@
         let audioElement = new Audio('notification.mp3');
 
         buttonEl.addEventListener('click', function(event){
-            messageEl.style.transform = 'translateY(-200px)';
+            messageEl.style.transform = `translateY(-${40 + message.clientHeight}px)`;
             audioElement.play();
         });
     </script>

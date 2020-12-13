@@ -36,8 +36,15 @@
         заполнения прогресс-бара.
         */
 
-        // Сделать с помощью setTimeout в цикле у меня не получилось. Так как цикл не реагировал на setTimeout.
+        // С помощью setTimeout.
+        for (let i = 0; i < 100; i++){
+            setTimeout(function (){
+                changeProgress(i);
+            }, i * 40);
+        }
 
+        // С помощью setInterval.
+        /*
         let i = 0;
         let intervalId = setInterval(function (){
             if (i > 100){
@@ -45,7 +52,8 @@
             } else {
                 changeProgress(i++);
             }
-        }, 100);
+        }, i * 40);
+         */
     </script>
 </body>
 
